@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8860:80
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define( 'SCRIPT_DEBUG', true );
+    volumes:
+      - ./my-custom-gutenberg-block:/var/www/html/wp-content/plugins/my-custom-gutenberg-block
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: wordpress_test
+    volumes:
+      - wp-data:/var/lib/mysql
+    
+volumes:
+  wp-data:

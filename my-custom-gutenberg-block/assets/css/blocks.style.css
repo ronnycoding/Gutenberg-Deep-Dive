@@ -1,0 +1,64 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-customgutenbergblock-controls {
+  color: #fff;
+  background: #00a8db;
+  border: 2px solid #0D72B2;
+  padding: 20px;
+  font-family: sans-serif; }
+  .wp-block-customgutenbergblock-controls.customgutenbergblock-align-left {
+    text-align: left; }
+  .wp-block-customgutenbergblock-controls.customgutenbergblock-align-center {
+    text-align: center; }
+  .wp-block-customgutenbergblock-controls.customgutenbergblock-align-right {
+    text-align: right; }
+.entry-content .wp-block-customgutenbergblock-demo,
+.wp-block-customgutenbergblock-demo {
+  background: rgba(254, 243, 224, 0.52);
+  border: 5px #f7b733 solid;
+  padding: 1rem; }
+  .entry-content .wp-block-customgutenbergblock-demo h2,
+  .wp-block-customgutenbergblock-demo h2 {
+    color: #222;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .entry-content .wp-block-customgutenbergblock-demo p,
+  .wp-block-customgutenbergblock-demo p {
+    font-size: 1.4rem; }
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-customgutenbergblock-recipe-card .recipe-image {
+  background: #f1f1f1;
+  float: right;
+  width: 50%;
+  min-height: 100px;
+  text-align: center; }
+
+.wp-block-customgutenbergblock-recipe-card .recipe-image button {
+  margin-top: 30px; }
+
+.wp-block-customgutenbergblock-recipe-card .recipe-image button.image-button {
+  margin: 0;
+  padding: 0;
+  display: block; }
+
+.wp-block-customgutenbergblock-recipe-card .recipe-image img {
+  display: block;
+  z-index: 1;
+  position: relative; }
+
+.wp-block-customgutenbergblock-recipe-card h2 {
+  font-size: 1.5em; }
+
+.wp-block-customgutenbergblock-recipe-card ul {
+  padding-left: 2.5em !important;
+  /* Needs fix in Gutenberg. */ }
+
+.wp-block-customgutenbergblock-recipe-card:after {
+  content: "";
+  clear: both;
+  display: table; }
